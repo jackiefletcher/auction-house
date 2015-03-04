@@ -5,6 +5,6 @@
 
 <ul>
   {{#each lot in model}}
-    <li>{{lot.name}}</li>
+    <li>{{#link-to 'lot' lot}} {{lot.name}} {{/link-to}}</li>
     {{/each}}
 </ul>

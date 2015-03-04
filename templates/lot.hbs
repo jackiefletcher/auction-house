@@ -1,0 +1,18 @@
+<h2>{{name}}</h2>
+
+<p>Description: {{description}}</p>
+<p>Auction Date: {{auctionDate}}</p>
+<p>Price: {{price}}</p>
+<p>Backstory: {{backStory}}</p>
+
+{{outlet}}
+
+<h3>Items</h3>
+
+{{#each item in items itemController="item"}}
+<p>
+  {{item.name}}
+</p>
+{{/each}}
+
+<p>{{#link-to 'new-item' this class="btn btn-success"}}New item{{/link-to}}</p>
