@@ -1,0 +1,15 @@
+.jumbotron {
+  background: url("/assets/brush.jpeg") no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+   background-size: 100% auto;
+  /*background-size:100% auto;*/
+  /*min-height: 700px;*/
+
+}
+
+body{
+  background-color:#f1f1f1;
+  font-family: 'Raleway', sans-serif;
+}

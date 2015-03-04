@@ -1,0 +1,10 @@
+<div class="jumbotron tooth">
+  <h1>Sobi Auction House</h1>
+  <p>{{#link-to 'new-lot' classNames="btn btn-info"}}Add a Lot{{/link-to}}</p>
+</div>
+
+<ul>
+  {{#each lot in model}}
+    <li>{{lot.name}}</li>
+    {{/each}}
+</ul>
