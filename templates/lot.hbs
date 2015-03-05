@@ -6,11 +6,14 @@
 {{outlet}}
 
 <h3>Items</h3>
-
-{{#each item in items}}
-<p>
-{{item.name}}
-</p>
-{{/each}}
+<ul>
+  {{#each item in items}}
+    <li>{{item.name}}<br />
+        {{item.description}}<br />
+        ${{item.price}}, {{item.auctionDate}}<br />
+        <img {{bind-attr src=item.imgUrl}} style="width: 100px; height:auto">
+    </li>
+  {{/each}}
+</ul>
 
 <p>{{#link-to 'new-item' this class="btn btn-success"}}New item{{/link-to}}</p>
