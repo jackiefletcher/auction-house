@@ -6,14 +6,20 @@
 {{outlet}}
 
 <h3>Items</h3>
-<ul>
-  {{#each item in items}}
-    <li>{{item.name}}<br />
-        {{item.description}}<br />
-        ${{item.price}}, {{item.auctionDate}}<br />
-        <img {{bind-attr src=item.imgUrl}} style="width: 100px; height:auto">
-    </li>
-  {{/each}}
-</ul>
+  <div class="thumbnails">
+    <ul>
+    {{#each item in items}}
+      <li>
+        {{#link-to 'item' item}}
+          <img {{bind-attr src=item.imgUrl}} style="width: 100px; height:auto"><br />
+        {{/link-to}}
+          {{item.name}}<br />
+          {{item.description}}<br />
+          ${{item.price}}, {{item.auctionDate}}<br />
+      </li>
+    {{/each}}
+    </ul>
+  </div>
 
+<br />
 <p>{{#link-to 'new-item' this class="btn btn-success"}}New item{{/link-to}}</p>

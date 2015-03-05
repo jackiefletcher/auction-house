@@ -4,4 +4,5 @@ Sobi.Router.map(function() {
     this.resource('new-item');
   });
   this.resource('new-lot');
+  this.resource('item', {path: ':item_id'});
 });

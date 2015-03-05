@@ -1,0 +1,13 @@
+<h2>{{name}}</h2>
+
+
+
+<ul>
+  <li><img {{bind-attr src=imgUrl}} style="width: 500px; height:auto"></li>
+  <li>{{description}}</li>
+  <li>{{auctionDate}}</li>
+  <li>{{price}}</li>
+  <li>{{backStory}}</li>
+</ul>
+
+<p>{{#link-to 'lot' this class="btn btn-success"}}Back to Lot{{/link-to}}</p>
