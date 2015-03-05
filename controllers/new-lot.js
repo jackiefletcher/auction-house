@@ -9,9 +9,7 @@ Sobi.NewLotController = Ember.Controller.extend({
         imgUrl: this.get('imgUrl'),
         backStory: this.get('backStory')
       });
-      debugger;
       newLot.save().then(function() {
-        debugger;
       });
       this.transitionToRoute('lots');
     }

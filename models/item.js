@@ -5,4 +5,5 @@ Sobi.Item = DS.Model.extend({
   price: DS.attr(),
   imgUrl: DS.attr(),
   backStory: DS.attr(),
+  lot: DS.belongsTo('lot', {async: true})
 })
