@@ -22,3 +22,15 @@ ul {
   display: inline-block;
   padding-left: 20px;
 }
+
+.nav-text {
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+  font-size: .6em;
+}
+
+.text-a {
+  padding: 0;
+  margin: 0;
+}

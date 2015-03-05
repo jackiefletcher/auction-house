@@ -5,6 +5,7 @@ Sobi.NewLotController = Ember.Controller.extend({
         name: this.get('name'),
         description: this.get('description'),
         auctionDate: this.get('auctionDate'),
+        imgUrl: this.get('imgUrl'),
 
         // format: "YYYYMMDD",
         // date: null,

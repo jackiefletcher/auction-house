@@ -3,11 +3,16 @@
   <br />
   <br />
   <br />
-  <p>{{#link-to 'new-lot' classNames="btn btn-default"}}Add a Lot{{/link-to}}</p>
+  {{#link-to 'new-lot' classNames="btn btn-default"}}Add a Lot{{/link-to}}
 </div>
 
-<ul>
-  {{#each lot in model}}
-    <li>{{#link-to 'lot' lot}} {{lot.name}} {{/link-to}}</li>
-    {{/each}}
-</ul>
+<div class="thumbnails">
+  <ul>
+    {{#each lot in model}}
+      <li>
+        {{#link-to 'lot' lot}} {{lot.name}} {{/link-to}}<br>
+        <img {{bind-attr src=lot.imgUrl}} style="width: 100px; height:auto"><br />
+      </li>
+      {{/each}}
+  </ul>
+</div>
