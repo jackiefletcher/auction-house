@@ -1,4 +1,4 @@
-Email Client
+Auction House
 ==============
 
 A simple Ember Javascript app that allows a user to add lots for auction and add items to those lots. 
